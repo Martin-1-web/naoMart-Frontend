@@ -1,0 +1,14 @@
+.main-header {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  padding: 30px 0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.main-header h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  letter-spacing: 1.2px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}

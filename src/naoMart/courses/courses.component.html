@@ -1,0 +1,15 @@
+<div class="courses-section">
+  <h2 class="section-title">Our Courses</h2>
+
+  <div class="courses-grid">
+
+    <div class="course-card">
+        @for (course of courses; track $index) {
+            <h3>{{ course.title }}</h3>
+      <p class="duration">Duration: {{ course.duration }}</p>
+      <p class="description">{{ course.description }}</p>
+        }
+    </div>
+  </div>
+</div>
+

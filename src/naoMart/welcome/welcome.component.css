@@ -1,0 +1,63 @@
+.welcome-section {
+  position: relative;
+  background: url('/assets/images/welcome.webp') no-repeat center center/cover;
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  min-height: 60vh;
+}
+.welcome-section .overlay {
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.welcome-section .content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.welcome-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+.welcome-section p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+.cta-btn {
+  background: #ff7e5f;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-left: 120px;
+}
+
+.cta-btn a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 2px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.cta-btn:hover {
+  background: #eb6750;
+}
+
+
+@media (max-width: 768px) {
+  .welcome-section {
+    padding: 60px 15px;
+  }
+  .welcome-section h1 { font-size: 2.2rem; }
+  .welcome-section p { font-size: 1rem; }
+}
