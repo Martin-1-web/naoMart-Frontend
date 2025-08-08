@@ -102,3 +102,12 @@ input:focus, textarea:focus {
 .cta-button:hover {
   background: #512da8;
 }
+
+.cta-button[disabled] {
+    background: #ccc;
+  cursor: not-allowed;
+}
+
+.cta-button[type="submit"]:hover:not([disabled]) {
+  background: #2c608c;
+}

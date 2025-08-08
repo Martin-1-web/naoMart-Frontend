@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from '../naoMart/home/home.component';
 import { AboutComponent } from '../naoMart/about/about.component';
 import { CoursesComponent } from '../naoMart/courses/courses.component';
 import { ContactComponent } from '../naoMart/contact/contact.component';
