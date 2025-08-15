@@ -1,3 +1,29 @@
-<header class="main-header">
-    <h2>naoMart IT Institute</h2>
-</header>
+<!-- <header class="site-header">
+    <div class="logo">naoMart</div>
+    <nav class="navbar">
+      <a routerLink="/home">Home</a>
+      <a routerLink="/about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header> -->
+
+  <nav class="navbar">
+  <div class="nav-brand">naoMart</div>
+
+  <!-- Hamburger Icon -->
+  <button class="menu-toggle" (click)="isMenuOpen = !isMenuOpen">
+    ☰
+  </button>
+
+  <!-- Nav Links -->
+  <div class="nav-links" [class.active]="isMenuOpen">
+    <a routerLink="/home" (click)="isMenuOpen = false">Home</a>
+    <a routerLink="/about" (click)="isMenuOpen = false">About</a>
+    <a href="#skills" (click)="isMenuOpen = false">Skills</a>
+    <a href="#portfolio" (click)="isMenuOpen = false">Portfolio</a>
+    <a href="#contact" (click)="isMenuOpen = false">Contact</a>
+  </div>
+</nav>
+

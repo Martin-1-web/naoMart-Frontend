@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
-
 import { HeaderComponent } from "../naoMart/header/header.component";
-import { WelcomeComponent } from "../naoMart/welcome/welcome.component";
-import { NavbarComponent } from "../naoMart/navbar/navbar.component";
-import { RouterOutlet } from '@angular/router';
+import { MainContentComponent } from "../naoMart/main-content/main-content.component";
 import { FooterComponent } from "../naoMart/footer/footer.component";
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, WelcomeComponent, NavbarComponent, FooterComponent],
+  imports: [RouterOutlet, HeaderComponent, MainContentComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
