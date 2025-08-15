@@ -79,7 +79,7 @@
     display: none; /* hide links initially */
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 72px;
     right: 0;
     background: #0d47a1; /* keep background on mobile */
     width: 25vw; /* take 80% of viewport width */
