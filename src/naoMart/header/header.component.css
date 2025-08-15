@@ -82,7 +82,7 @@
     top: 60px;
     right: 0;
     background: #0d47a1; /* keep background on mobile */
-    width: 80vw; /* take 80% of viewport width */
+    width: 25vw; /* take 80% of viewport width */
     max-width: 320px; /* but never exceed 320px */
     padding: 1rem;
     gap: 1rem;
