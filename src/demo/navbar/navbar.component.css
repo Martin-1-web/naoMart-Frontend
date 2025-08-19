@@ -1,0 +1,84 @@
+.container{
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    background: #0d1b2a;
+    padding: 10px 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+    padding: 8px 12px;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links a.active {
+    color: yellowgreen;
+    font-weight: bold;
+    border-bottom: 2px solid yellowgreen;
+}
+
+.nav-links a:hover{
+    color: yellowgreen;
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+/* Hamburger button */
+.hamburger {
+    display: none;
+}
+
+/* Responsive: Small screens */
+@media (max-width: 768px) {
+    .hamburger{
+        display: block;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #142d4c;
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        padding: 15px;
+        border-radius: 8px;
+        
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: rgba(0,0,0,0.5); */
+    z-index: 5;
+}
+
+    .nav-links {
+    position: absolute;
+    z-index: 10; /* keep menu above the backdrop */
+}
+}

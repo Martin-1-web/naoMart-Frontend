@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { AboutComponent } from '../naoMart/about/about.component';
-import { MainContentComponent } from '../naoMart/main-content/main-content.component';
+import { WelcomeComponent } from '../demo/welcome/welcome.component';
+import { CoursesComponent } from '../demo/courses/courses.component';
 
 export const routes: Routes = [
-    {path: 'home', component: MainContentComponent},
-    {path: 'about', component: AboutComponent}
+    {path: 'home', component: WelcomeComponent},
+    {path: 'courses', component: CoursesComponent}
 ];

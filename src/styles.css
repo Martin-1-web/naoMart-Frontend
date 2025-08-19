@@ -16,7 +16,7 @@ a {
   color: inherit;
 } */
 
-html, body {
+/* html, body {
   height: 100%;
   margin: 0;
 }
@@ -26,23 +26,28 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
+} */
 
 /* Main content takes up the remaining space */
-main {
+/* main {
   flex: 1;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-} 
+}  */
 
 /* Footer styles */
-footer {
+/* footer {
   background: #0d47a1;
   color: white;
   text-align: center;
   padding: 1rem;
+} */
+
+body{
+  margin: 0;
+  padding: 0;
 }
 

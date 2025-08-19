@@ -1,0 +1,24 @@
+<nav class="container">
+    <div class="logo">naoMart</div>
+
+    <div class="nav-links" [class.active]="isMenuOpen" (click)="closeMenu()">
+        <a routerLink="/home" routerLinkActive="active">Home</a>
+        <a routerLink="/courses">Courses</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="hamburger" (click)="toggleMenu()">
+       @if (!isMenuOpen) {
+        <span>&#9776;</span>
+       }
+       @else {
+        <span>&times;</span>
+       }
+    </div>
+
+    @if (isMenuOpen) {
+        <div class="backdrop" (click)="closeMenu()"></div>
+    }
+
+</nav>
