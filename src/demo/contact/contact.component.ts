@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component} from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms'
 import { ContactModel } from '../contact-model';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar'
@@ -6,14 +6,14 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar'
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, MatSnackBarModule],
+  imports: [FormsModule, MatSnackBarModule,],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
 
   contactModel = new ContactModel();
- constructor(private snackBar: MatSnackBar) {}
+  constructor(private snackBar: MatSnackBar) {}
 
    onSubmit(form: NgForm) {
    

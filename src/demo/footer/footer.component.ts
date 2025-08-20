@@ -10,5 +10,5 @@ import { Component } from '@angular/core';
 export class FooterComponent {
 
   currentDate: number = new Date().getFullYear()
-  email: string = 'naomartit@gmail.come';
+  email: string = 'naomartit@gmail.com';
 }
