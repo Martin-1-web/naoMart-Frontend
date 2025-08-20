@@ -19,7 +19,7 @@ export class ContactComponent {
    
     if(form.valid) {
       this.snackBar.open('✅ Thank you for contacting us! We will get back to you soon.',
-        'Close', {duration: 4000, horizontalPosition: 'center', verticalPosition: 'top'}
+        'Close', {duration: 5000, horizontalPosition: 'center', verticalPosition: 'top'}
       );
       console.log(form.value);
       form.reset();
