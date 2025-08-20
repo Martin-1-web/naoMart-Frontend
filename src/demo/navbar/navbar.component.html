@@ -1,11 +1,11 @@
 <nav class="container">
     <div class="logo">naoMart</div>
 
-    <div class="nav-links" [class.active]="isMenuOpen">
-        <a routerLink="/home" routerLinkActive="active" (click)="closeMenu()">Home</a>
-        <a routerLink="/courses" routerLinkActive="active" (click)="closeMenu()">Courses</a>
-        <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About</a>
-        <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a>
+    <div class="nav-links" [class.active]="isMenuOpen" (click)="closeMenu()">
+        <a routerLink="/home" routerLinkActive="active">Home</a>
+        <a routerLink="/courses" routerLinkActive="active">Courses</a>
+        <a routerLink="/about" routerLinkActive="active">About</a>
+        <a routerLink="/contact" routerLinkActive="active">Contact</a>
     </div>
 
     <div class="hamburger" (click)="toggleMenu()">
