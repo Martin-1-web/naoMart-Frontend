@@ -3,9 +3,9 @@
 
     <div class="nav-links" [class.active]="isMenuOpen" (click)="closeMenu()">
         <a routerLink="/home" routerLinkActive="active">Home</a>
-        <a routerLink="/courses">Courses</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a routerLink="/courses" routerLinkActive="active">Courses</a>
+        <a routerLink="/about" routerLinkActive="active">About</a>
+        <a routerLink="contact" routerLinkActive="active">Contact</a>
     </div>
 
     <div class="hamburger" (click)="toggleMenu()">
