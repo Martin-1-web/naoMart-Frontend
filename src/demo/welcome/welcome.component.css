@@ -7,9 +7,16 @@ main{
     background-position: 57%;
 }
 
+.welcome-content h1{
+    position: relative;
+    top: 60px;
+}
+
 .welcome-content p {
     font-size: 1.25rem;
     line-height: 1.6;
+    position: relative;
+    top: 70px;
 }
 
 .cta-btn {
@@ -23,6 +30,8 @@ main{
   text-decoration: none;
   transition: background 0.3s ease, transform 0.2s ease;
   margin-left: 10rem;
+  position: relative;
+  top: 140px;
 }
 
 .cta-btn:hover {
@@ -38,7 +47,7 @@ main{
     .cta-btn {
         margin-left: 3rem;
         color: #fff;
-        padding: 5px 3px;
+        padding: 8px 5px;
         position: relative;
         top: 80px;
     }

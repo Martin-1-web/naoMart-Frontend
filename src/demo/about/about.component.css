@@ -6,9 +6,12 @@
 }
 
 .about h1{
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: #0d1b2a;
+    color: #673AB7;
+    position: relative;
+    top:15px;
+    line-height: 3
 }
 
 .about p {

@@ -9,7 +9,11 @@
 
 .contact h1 {
   margin-bottom: 0.5rem;
-  color: #0d1b2a;
+  color: #673AB7;
+  font-size: 1.8rem;
+    position: relative;
+    top:15px;
+    line-height: 3
 }
 
 form {
