@@ -1,7 +1,8 @@
-import { Component} from '@angular/core';
+import { Component, inject} from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms'
 import { ContactModel } from '../contact-model';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar'
+import { ContactService } from '../contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -13,16 +14,28 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar'
 export class ContactComponent {
 
   contactModel = new ContactModel();
-  constructor(private snackBar: MatSnackBar) {}
+  
+  private snackBar = inject(MatSnackBar)
+  private _contactModelService = inject(ContactService);
 
-   onSubmit(form: NgForm) {
-   
+
+  onSubmit(form: NgForm) {
+    
+    if(!this.contactModel.name || !this.contactModel.email || !this.contactModel.message) {
+      console.log("Warning: can't send empty value");
+      return
+    }
+    
+    this._contactModelService.sendData(this.contactModel).subscribe({next: (data) => console.log('Success', data), 
+      error: (err)=> {console.log('Error', err)}})
+
     if(form.valid) {
-      this.snackBar.open('✅ Thank you for contacting us! We will get back to you soon.',
-        'Close', {duration: 5000, horizontalPosition: 'center', verticalPosition: 'top'}
-      );
-      console.log(form.value);
-      form.reset();
+      this.snackBar.open('✅ Thank you for contacting us! We will get back to you shortly.', 
+        'Close', {duration: 5000, horizontalPosition: 'center', verticalPosition: 'top'});
+
+        form.reset();
+        return;
     }
   }
+
 }
