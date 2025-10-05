@@ -11,13 +11,15 @@ import { ContactService } from '../contact.service';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
-export class ContactComponent {
+export class ContactComponent  {
 
   contactModel = new ContactModel();
   
   private snackBar = inject(MatSnackBar)
   private _contactModelService = inject(ContactService);
 
+
+  constructor(){this._contactModelService.getUsers().subscribe({next: (res) => {console.log(res)}})}
 
   onSubmit(form: NgForm) {
     
